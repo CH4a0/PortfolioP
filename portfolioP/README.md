@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# PortfolioP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PortfolioP es un proyecto de portafolio personal desarrollado con **React**, **TypeScript**, y **Vite**. Este proyecto utiliza **Bootstrap** para el diseño responsivo y cuenta con un modo oscuro/claro.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Características](#características)
+- [Requisitos Previos](#requisitos-previos)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Estructura del Proyecto](#estructura-del-proyecto)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Características
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React + TypeScript**: Desarrollo moderno con tipado estático.
+- **Vite**: Herramienta de construcción rápida con soporte para HMR (Hot Module Replacement).
+- **Bootstrap**: Diseño responsivo y componentes predefinidos.
+- **Modo Oscuro/Claro**: Cambio dinámico entre temas.
+- **Configuración ESLint y Prettier**: Código limpio y consistente.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Requisitos Previos
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [npm](https://www.npmjs.com/)
+
+---
+
+## Instalación
+
+1. Clona este repositorio:
+
+   git clone https://github.com/tu-usuario/PortfolioP.git
+   cd PortfolioP/portfolioP
+
+## Uso
+Para iniciar el servidor de desarrollo:
+  npm run dev
+
+## Scripts disponibles
+  En el archivo package.json, encontrarás los siguientes scripts:
+  dev: Inicia el servidor de desarrollo.
+  build: Compila la aplicación para producción.
+  lint: Ejecuta ESLint y TypeScript para verificar errores.
+  format: Formatea el código con Prettier.
+  preview: Previsualiza la aplicación compilada
+  npm run build
+  npm run preview
+## Estructura del proyecto
+  portfolioP/
+  ├── src/                # Código fuente
+  │   ├── App.tsx         # Componente principal
+  │   ├── main.tsx        # Punto de entrada
+  │   ├── App.css         # Estilos personalizados
+  │   └── vite-env.d.ts   # Tipos de Vite
+  ├── public/             # Archivos estáticos
+  ├── tsconfig.json       # Configuración de TypeScript
+  ├── vite.config.ts      # Configuración de Vite
+  ├── package.json        # Dependencias y scripts
+  ├── .gitignore          # Archivos ignorados por Git
+  └── README.md           # Documentación del proyecto
