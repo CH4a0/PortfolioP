@@ -6,7 +6,14 @@ function App() {
   const [dark, setDark] = useState(false);
 
   return (
-    <div data-bs-theme={dark ? 'dark' : 'light'} style={{ minHeight: '100vh', background: dark ? '#212529' : '#fff' }}>
+    <div
+      data-bs-theme={dark ? 'dark' : 'light'}
+      style={{
+        minHeight: '100vh',
+        background: dark ? '#212529' : '#fff',
+        color: dark ? '#fff' : '#000' // <-- Esto agrega color al texto principal
+      }}
+    >
       <Navbar expand="lg" bg={dark ? "dark" : "light"} variant={dark ? "dark" : "light"} className="mb-4 shadow-sm">
         <Container>
           <Navbar.Brand href="#home">Mi Portfolio</Navbar.Brand>
@@ -14,7 +21,7 @@ function App() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Inicio</Nav.Link>
-              <Nav.Link href="#about">Sobre mí</Nav.Link>
+              <Nav.Link href="#about">About me</Nav.Link>
               <Nav.Link href="#projects">Proyectos</Nav.Link>
               <Nav.Link href="#contact">Contacto</Nav.Link>
             </Nav>
@@ -26,21 +33,141 @@ function App() {
       </Navbar>
       <Container>
         <section id="home" className="mb-5 text-center">
-          <h1>Hola, soy [Tu Nombre]</h1>
-          <p>Desarrollador web apasionado por React y tecnologías modernas.</p>
+          <img src="/portfolio.jpg" alt="Mi Portfolio" className="img-fluid mb-4" />
+          <h1>Portafolio personal desarrollado con React, TypeScript, y Vite.</h1>
+          <p>Este proyecto utiliza Bootstrap para el diseño responsivo</p>
         </section>
         <section id="about" className="mb-5">
           <h2>Sobre mí</h2>
-          <p>Aquí puedes escribir una breve descripción sobre ti.</p>
+          <div className="d-flex flex-column flex-md-row align-items-center gap-4">
+            <img
+              src="/img2.jpg"
+              alt="Foto personal"
+              style={{ width: '200px', borderRadius: '10px', objectFit: 'cover' }}
+            />
+            <div>
+              <p>
+                Hola Soy Chao, y os presento mi supuesto nuevo portfolio web. Aquí encontrarás una muestra de mi página, mis proyectos y algo sobre mí.
+                Me gusta explorar nuevas ideas y aprender cosas nuevas. En este espacio, encontrarás algunos de mis intereses y proyectos personales. En este portfolio, podrás explorar algunos de los proyectos en los que hice.</p>
+              <p>Soy una persona con ganas de aprender. Me esfuerzo por trabajar
+                de manera efectiva en equipo, siendo responsable y puntual.
+                Tengo fuerte deseo con la mejora continua y el cumplimiento de
+                objetivos.
+                Hice prácticas de empresas FCT en AvanzaFibra durante 2
+                meses sobre como montar fibras, fusión de cables... Titulos: Título de Educación Obligatorio
+                Estudios ESO y Título de técnico grado de medio de sistemas microinformaticos
+                Estudios FP 2021-2023
+                Lorem ipsum incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+          </div>
+        </section>
+        <section id="languages" className="mb-5">
+          <h2 className="text-center mb-4">Idiomas</h2>
+
+          <div className="mb-3">
+            <p className="fw-bold">🇪🇸 Castellano</p>
+            <div className="progress">
+              <div className="progress-bar bg-grey" style={{ width: '90%' }}>
+                90%
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <p className="fw-bold">🇬🇧 Inglés</p>
+            <div className="progress">
+              <div className="progress-bar bg-info" style={{ width: '50%' }}>
+                50%
+              </div>
+            </div>
+          </div>
+
+          <div className="mb-3">
+            <p className="fw-bold">🇨🇳 Chino</p>
+            <div className="progress">
+              <div className="progress-bar bg-warning text-dark" style={{ width: '40%' }}>
+                40%
+              </div>
+            </div>
+          </div>
         </section>
         <section id="projects" className="mb-5">
           <h2>Proyectos</h2>
-          <ul>
-            <li>Proyecto 1</li>
-            <li>Proyecto 2</li>
-            <li>...</li>
-          </ul>
+          <div className="table-responsive">
+            <table className="table table-bordered table-hover align-middle">
+              <thead className="table-dark">
+                <tr>
+                  <th>Proyecto</th>
+                  <th>Descripción</th>
+                  <th>Enlace</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Proyecto 1</td>
+                  <td>Proyecto web del año pasado</td>
+                  <td>
+                    <a
+                      href="https://ch4a0.github.io/ProyectowebC/HTML/index.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Proyecto 2</td>
+                  <td>Formulario</td>
+                  <td>
+                    <a
+                      href="https://github.com/ICV-24-25/html-formulario-registro-CH4a0"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Proyecto 3</td>
+                  <td>Plantilla recuperación</td>
+                  <td>
+                    <a
+                      href="https://ch4a0.github.io/AW-Chao/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan={3}>
+                    <video width="100%" height="auto" controls>
+                      <source src="./video1.mp4" type="video/mp4" />
+                      Tu navegador no soporta el video.
+                    </video>
+                  </td>
+                </tr>
+                <tr>
+                  <td colSpan={3}>
+                    <div className="ratio ratio-16x9">
+                      <iframe
+                        src="https://www.youtube.com/embed/iG2jotQo9NI?si=CG7eg7wFQq6Irgrh"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
+
         <section id="contact" className="mb-5">
           <h2>Contacto</h2>
           <p>Envíame un email a <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
