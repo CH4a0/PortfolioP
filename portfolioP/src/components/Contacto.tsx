@@ -1,13 +1,19 @@
-// src/ContactPage.tsx
 import React from 'react';
 
-const ContactPage: React.FC = () => {
-  return (
-    <section id="contact" className="mb-4">
-      <h2>Contacto</h2>
-      <p>Envíame un email a <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
-    </section>
-  );
-};
+interface ContactoProps {
+  dark: boolean;
+}
 
-export default ContactPage;
+const Contacto: React.FC<ContactoProps> = ({ dark }) => (
+  <div
+    style={{
+      background: dark ? '#212529' : '#fff',
+      color: dark ? '#fff' : '#000',
+    }}
+  >
+    <h2>Contacto</h2>
+    <p>Puedes contactarme por email: <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
+  </div>
+);
+
+export default Contacto;

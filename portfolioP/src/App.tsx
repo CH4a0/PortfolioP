@@ -1,13 +1,11 @@
-// src/App.tsx
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Container, Button, Nav } from 'react-bootstrap';
-import './App.css'; // Asegúrate de que esta línea esté presente
-// Importa los componentes desde la carpeta components
-import HomePage from './components/Pagina1';  // Ahora desde components/HomePage
-import ContactPage from './components/Contacto';  // Ahora desde components/ContactPage
+import './App.css';  // Asegúrate de que esta línea esté presente
 
-import './App.css';  // Mantén tus estilos personalizados
+// Importa los componentes desde la carpeta components
+import Pagina1 from './components/Pagina1';  // Renombrado de HomePage a Pagina1
+import Contacto from './components/Contacto';  // Renombrado de ContactPage a Contacto
 
 const App: React.FC = () => {
   const [dark, setDark] = useState(false);
@@ -40,11 +38,11 @@ const App: React.FC = () => {
           </Container>
         </Navbar>
 
-
         <Container>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            {/* Pasamos el estado dark como prop a Pagina1 y Contacto */}
+            <Route path="/" element={<Pagina1 dark={dark} />} />
+            <Route path="/contact" element={<Contacto dark={dark} />} />
           </Routes>
         </Container>
 
