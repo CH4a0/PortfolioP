@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { Navbar, Container, Button, Nav } from 'react-bootstrap';
-import './App.css';  // Asegúrate de que esta línea esté presente
+import './App.css';
 
 // Importa los componentes desde la carpeta components
 import Pagina1 from './components/Pagina1';  // Renombrado de HomePage a Pagina1
@@ -47,7 +47,7 @@ const App: React.FC = () => {
         </Container>
 
         <footer className="text-center py-3 border-top mt-5">
-          <h3 className="mb-2">Página web creada en 2024</h3>
+          <h3 className="mb-2">Página web creada en 2025</h3>
         </footer>
       </div>
     </Router>

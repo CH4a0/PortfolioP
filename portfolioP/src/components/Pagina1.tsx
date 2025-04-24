@@ -40,7 +40,7 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
       <h2 className="text-center fs-5 mb-3">Idiomas</h2>
 
       <div className="mb-3">
-        <p className="fw-bold">🇪🇸 Castellano</p>
+        <p className="fw-bold">Castellano</p>
         <div className="progress">
           <div className="progress-bar bg-grey" style={{ width: '90%' }}>
             90%
@@ -49,7 +49,7 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
       </div>
 
       <div className="mb-3">
-        <p className="fw-bold">🇬🇧 Inglés</p>
+        <p className="fw-bold">Inglés</p>
         <div className="progress">
           <div className="progress-bar bg-info" style={{ width: '50%' }}>
             50%
@@ -58,7 +58,7 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
       </div>
 
       <div className="mb-3">
-        <p className="fw-bold">🇨🇳 Chino</p>
+        <p className="fw-bold">Chino</p>
         <div className="progress">
           <div className="progress-bar bg-warning text-dark" style={{ width: '40%' }}>
             40%
@@ -124,10 +124,6 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
       <img src="/Plantilla.jpeg" alt="Plantilla" className="img-fluid mb-4" />
     </section>
 
-    <section id="contact" className="mb-4">
-      <h2 className="fs-5">Contacto</h2>
-      <p>Envíame un email a <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
-    </section>
   </div>
   </>
 );
