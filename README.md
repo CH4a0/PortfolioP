@@ -23,6 +23,7 @@ PortfolioP es un proyecto de portafolio personal desarrollado con **React**, **T
 - **Modo Oscuro/Claro**: Cambio dinámico entre temas.
 - **Configuración ESLint y Prettier**: Código limpio y consistente.
 - **Rutas Dinámicas**: Navegación entre páginas con React Router.
+- **Iconos de las tecnologias**
 
 ---
 

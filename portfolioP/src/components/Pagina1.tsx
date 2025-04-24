@@ -1,4 +1,20 @@
 import React from 'react';
+// Iconos de las tecnologías
+import reactIcon from "../assets/react.svg";
+import tsIcon from "../assets/typescript.svg";
+import viteIcon from "../assets/vite.svg";
+import cssIcon from "../assets/css3.svg";
+import htmlIcon from "../assets/html5.svg";
+import jsIcon from "../assets/javascript.svg";
+
+const tecnologias = [
+  { name: "React", icon: reactIcon },
+  { name: "TypeScript", icon: tsIcon },
+  { name: "Vite", icon: viteIcon },
+  { name: "CSS", icon: cssIcon },
+  { name: "HTML", icon: htmlIcon },
+  { name: "JavaScript", icon: jsIcon },
+];
 
 interface Pagina1Props {
   dark: boolean;
@@ -36,6 +52,27 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
         </div>
       </div>
     </section>
+<section className="mb-4">
+  <h1 className="fs-5 text-center">Tecnologías usados alguna vez...</h1>
+  <br></br>
+  <div className="d-flex flex-wrap justify-content-center gap-4">
+    {tecnologias.map((tech) => (
+      <div
+        key={tech.name}
+        className="d-flex flex-column align-items-center"
+        style={{ width: "100px" }}
+      >
+        <img
+          src={tech.icon}
+          alt={tech.name}
+          style={{ width: "50px", height: "50px", objectFit: "contain" }}
+        />
+        <span className="mt-2">{tech.name}</span>
+      </div>
+    ))}
+  </div>
+</section>
+
     <section id="languages" className="mb-4">
       <h2 className="text-center fs-5 mb-3">Idiomas</h2>
 
