@@ -20,6 +20,7 @@ PortfolioP es un proyecto de portafolio personal desarrollado con **React**, **T
 - **Bootstrap**: Diseño responsivo y componentes predefinidos.
 - **Modo Oscuro/Claro**: Cambio dinámico entre temas.
 - **Configuración ESLint y Prettier**: Código limpio y consistente.
+- **Rutas Dinámicas**: Navegación entre páginas con React Router.
 
 ---
 
@@ -55,13 +56,16 @@ Para iniciar el servidor de desarrollo:
 ## Estructura del proyecto
   portfolioP/
   ├── src/                # Código fuente
-  │   ├── App.tsx         # Componente principal
-  │   ├── main.tsx        # Punto de entrada
-  │   ├── App.css         # Estilos personalizados
-  │   └── vite-env.d.ts   # Tipos de Vite
-  ├── public/             # Archivos estáticos
-  ├── tsconfig.json       # Configuración de TypeScript
-  ├── vite.config.ts      # Configuración de Vite
-  ├── package.json        # Dependencias y scripts
-  ├── .gitignore          # Archivos ignorados por Git
-  └── README.md           # Documentación del proyecto
+  │   ├── components/     # Componentes reutilizables
+  │   │   ├── [Pagina1.tsx]
+  │   │   └── [Contacto.tsx] # Página de contacto
+  │   ├── [App.tsx]# Componente principal
+  │   ├── [main.tsx]# Punto de entrada
+  │   ├── [App.css]# Estilos personalizados
+  │   └── [vite-env.d.ts]# Tipos de Vite
+  ├── public/ # Archivos estáticos
+  ├── [tsconfig.json]# Configuración de TypeScript
+  ├── [vite.config.ts]# Configuración de Vite
+  ├── [package.json]# Dependencias y scripts
+  ├── .gitignore # Archivos ignorados por Git
+  └── [README.md]# Documentación del proyecto
