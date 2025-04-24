@@ -2,6 +2,8 @@
 
 PortfolioP es un proyecto de portafolio personal desarrollado con **React**, **TypeScript**, y **Vite**. Este proyecto utiliza **Bootstrap** para el diseño responsivo y cuenta con un modo oscuro/claro.
 
+## Se ha usado herramientas como ChatGPT y Copilot para automatizar codigo e inspiración
+
 ## Tabla de Contenidos
 
 - [Características](#características)
