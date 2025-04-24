@@ -36,7 +36,6 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
         </div>
       </div>
     </section>
-
     <section id="languages" className="mb-4">
       <h2 className="text-center fs-5 mb-3">Idiomas</h2>
 
@@ -129,19 +128,7 @@ const Pagina1: React.FC<Pagina1Props> = ({ dark }) => (
       <h2 className="fs-5">Contacto</h2>
       <p>Envíame un email a <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
     </section>
-    <footer className="text-center py-3 border-top mt-5">
-        <h3 className="mb-2 fs-6">Página web creada en 2024</h3>
-        <a href="#" className="me-3 text-dark fs-5">
-          <i className="bi bi-twitter"></i>
-        </a>
-        <a href="#" className="me-3 text-dark fs-5">
-          <i className="bi bi-linkedin"></i>
-        </a>
-        <a href="#" className="text-dark fs-5">
-          <i className="bi bi-youtube"></i>
-        </a>
-      </footer>
-    </div>
+  </div>
   </>
 );
 
