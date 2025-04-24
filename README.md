@@ -53,19 +53,22 @@ Para iniciar el servidor de desarrollo:
   preview: Previsualiza la aplicación compilada
   npm run build
   npm run preview
-## Estructura del proyecto
-  portfolioP/
-  ├── src/                # Código fuente
-  │   ├── components/     # Componentes reutilizables
-  │   │   ├── [Pagina1.tsx]
-  │   │   └── [Contacto.tsx] # Página de contacto
-  │   ├── [App.tsx]# Componente principal
-  │   ├── [main.tsx]# Punto de entrada
-  │   ├── [App.css]# Estilos personalizados
-  │   └── [vite-env.d.ts]# Tipos de Vite
-  ├── public/ # Archivos estáticos
-  ├── [tsconfig.json]# Configuración de TypeScript
-  ├── [vite.config.ts]# Configuración de Vite
-  ├── [package.json]# Dependencias y scripts
-  ├── .gitignore # Archivos ignorados por Git
-  └── [README.md]# Documentación del proyecto
+## Estructura del Proyecto
+
+```plaintext
+portfolioP/
+├── src/                # Código fuente
+│   ├── components/     # Componentes reutilizables
+│   │   ├── Pagina1.tsx # Página 1
+│   │   └── Contacto.tsx # Página de contacto
+│   ├── App.tsx         # Componente principal
+│   ├── main.tsx        # Punto de entrada
+│   ├── App.css         # Estilos personalizados
+│   └── vite-env.d.ts   # Tipos de Vite
+├── public/             # Archivos estáticos
+├── tsconfig.json       # Configuración de TypeScript
+├── vite.config.ts      # Configuración de Vite
+├── package.json        # Dependencias y scripts
+├── .gitignore          # Archivos ignorados por Git
+└── README.md           # Documentación del proyecto
+```
