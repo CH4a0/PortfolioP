@@ -165,15 +165,28 @@ function App() {
                 </tr>
               </tbody>
             </table>
+            <img src="/Plantilla.jpeg" alt="Plantilla" className="img-fluid mb-4" />
           </div>
         </section>
-
         <section id="contact" className="mb-5">
           <h2>Contacto</h2>
           <p>Envíame un email a <a href="mailto:tucorreo@email.com">tucorreo@email.com</a></p>
         </section>
       </Container>
+      <footer className="text-center py-4 border-top mt-5">
+        <h3 className="mb-3">Página web creada en 2024</h3>
+        <a href="#" className="me-3 text-dark fs-4">
+          <i className="bi bi-twitter"></i> {/* Ícono de Twitter */}
+        </a>
+        <a href="#" className="me-3 text-dark fs-4">
+          <i className="bi bi-linkedin"></i> {/* Ícono de LinkedIn */}
+        </a>
+        <a href="#" className="text-dark fs-4">
+          <i className="bi bi-youtube"></i> {/* Ícono de YouTube */}
+        </a>
+      </footer>
     </div>
+
   );
 }
 
